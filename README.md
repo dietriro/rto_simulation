@@ -7,7 +7,7 @@ This repository contains the ROS source code for simulating the Festo Robotino r
 ## ROS 1 Packages for Robotino-Simulation
 |master|Melodic + Ubuntu Bionic|Noetic + Ubuntu Focal|
 |:---:|:---:|:---:|
-|[![Build Status](https://travis-ci.com/dietriro/rto-simulation.svg?branch=master)](https://travis-ci.com/dietriro/rto-simulation)|[![Build Status](https://travis-ci.com/dietriro/rto-simulation.svg?branch=melodic-devel)](https://travis-ci.com/dietriro/rto-simulation)|[![Build Status](https://travis-ci.com/dietriro/rto-simulation.svg?branch=noetic-devel)](https://travis-ci.com/dietriro/rto-simulation)|
+|[![Build Status](https://travis-ci.com/dietriro/rto_simulation.svg?branch=master)](https://travis-ci.com/dietriro/rto_simulation)|[![Build Status](https://travis-ci.com/dietriro/rto_simulation.svg?branch=melodic-devel)](https://travis-ci.com/dietriro/rto_simulation)|[![Build Status](https://travis-ci.com/dietriro/rto_simulation.svg?branch=noetic-devel)](https://travis-ci.com/dietriro/rto_simulation)|
 
 
 ## Overview
@@ -17,11 +17,11 @@ In the following, all packages within this repository are briefly explained.
 ### Core Repository
 
 <dl>
-  <dt><strong><a href="https://github.com/dietriro/rto-core/tree/noetic-devel/rto_bringup_sim">rto_bringup_sim</a></strong></dt>
+  <dt><strong><a href="https://github.com/dietriro/rto_simulation/tree/noetic-devel/rto_bringup_sim">rto_bringup_sim</a></strong></dt>
   <dd> Contains config, script and launch files for starting the robot in a simulated world. </dd>
-  <dt><strong><a href="https://github.com/dietriro/rto-core/tree/noetic-devel/rto_simulation">rto_simulation</a></strong></dt>
+  <dt><strong><a href="https://github.com/dietriro/rto_simulation/tree/noetic-devel/rto_simulation">rto_simulation</a></strong></dt>
   <dd> The meta-package of this repository. </dd>
-  <dt><strong><a href="https://github.com/dietriro/rto-core/tree/noetic-devel/rto_worlds">rto_worlds</a></strong></dt>
+  <dt><strong><a href="https://github.com/dietriro/rto_simulation/tree/noetic-devel/rto_worlds">rto_worlds</a></strong></dt>
   <dd> Contains all world models etc. for bringing up a simulation environment (e.g. gazebo). </dd>
 </dl>
 
@@ -30,17 +30,17 @@ In order to use these packages and with that use the robot in a simulated enviro
 ### Dependencies
 
 <dl>
-  <dt><strong><a href="https://github.com/dietriro/rto-core">rto-core</a></strong></dt>
+  <dt><strong><a href="https://github.com/dietriro/rto_core">rto_core</a></strong></dt>
   <dd> This repository contains everything needed to start-up the RTO in a simulated environment or the real-world, including localization and navigation. </dd>
 </dl>
 
 ## Installation
 
-In order to use this package with the [rto-core](https://github.com/dietriro/rto-core) package, you need to first follow the installation instructions from the core repository. Afterwards you just have to clone this repository into your catkin workspace, install all dependencies and build it.
+In order to use this package with the [rto_core](https://github.com/dietriro/rto_core) package, you need to first follow the installation instructions from the core repository. Afterwards you just have to clone this repository into your catkin workspace, install all dependencies and build it.
 
 ```bash
 cd ~/catkin_ws/src
-git clone https://github.com/dietriro/rto-simulation.git
+git clone https://github.com/dietriro/rto_simulation.git
 cd ~/catkin_ws
 rosdep install -y --from-paths src --ignore-src --rosdistro noetic --os=ubuntu:focal
 catkin build
