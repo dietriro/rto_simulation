@@ -6,5 +6,5 @@
 # add all repositories from an existing workspace, you can use `wstool scrape`.
 
 - git:
-    local-name: rto-core
-    uri: https://github.com/dietriro/rto-core.git
+    local-name: rto_core
+    uri: https://github.com/dietriro/rto_core.git

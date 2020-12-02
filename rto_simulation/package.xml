@@ -10,8 +10,8 @@
   <maintainer email="robin.dietrich@tum.de">Robin Dietrich</maintainer>
   <!-- <url type="website">http://wiki.ros.org/turtlebot3</url>
   <url type="emanual">http://turtlebot3.robotis.com</url> -->
-  <url type="repository">https://github.com/dietriro/rto-simulation</url>
-  <url type="bugtracker">https://github.com/dietriro/rto-simulation/issues</url>
+  <url type="repository">https://github.com/dietriro/rto_simulation</url>
+  <url type="bugtracker">https://github.com/dietriro/rto_simulation/issues</url>
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>rto_bringup_sim</exec_depend>
   <exec_depend>rto_worlds</exec_depend>
