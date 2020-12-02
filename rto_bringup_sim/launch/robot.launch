@@ -1,11 +1,12 @@
 <launch>
     <arg name="robot" default="$(optenv ROBOT rto-1)" doc="Robot type [rto-1]"/>
+    <arg name="robot_env" default="$(optenv ROBOT_ENV simple_world)" doc="Simulation world [simple_world, hallway_loop]"/>
     <arg name="x_pos" default="0.0"/>
     <arg name="y_pos" default="0.0"/>
     <arg name="z_pos" default="0.0"/>
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="$(find rto_worlds)/worlds/simple_world.world"/> 
+        <arg name="world_name" value="$(find rto_worlds)/worlds/$(arg robot_env).world"/> 
         <arg name="paused" value="false"/>
         <arg name="use_sim_time" value="true"/>
         <arg name="gui" value="true"/>
